@@ -73,7 +73,7 @@ header{
     40% { transform: scale(1.3);}
     50% { transform: scale(1); }
     60% { transform: scale(1); }
-    70% { transform: scale(1.13);}
+    70% { transform: scale(1.16);}
     80% { transform: scale(1); }
     100% { transform: scale(1); }
 }
@@ -321,7 +321,7 @@ header{
 	background-attachment: fixed;
 }
 .countdown-background{
-	background: rgba(0,0,0,0.6);
+	background: rgba(0,0,0,0.5);
 	padding: 100px 0;
 }
 #countdown-title{
@@ -516,7 +516,7 @@ header{
 	background-attachment: fixed;
 }
 .awards-background{
-	background: rgba(0,0,0,0.6);
+	background: rgba(0,0,0,0.5);
 	padding: 100px 0;
 }
 #awards-section-title{
@@ -535,6 +535,19 @@ header{
 .winning-places img{
 	width: 100%;
 	padding: 20px 100px;
+}
+.rotate-img:hover{
+	-webkit-animation: scale 1s infinite linear;
+}
+@-webkit-keyframes scale {
+	0% { transform: scale(1); }
+	20% { transform: scale(1); }
+    30% { transform: scale(1.04); }
+    40% { transform: scale(1);}
+    50% { transform: scale(1); }
+    60% { transform: scale(1.08); }
+    70% { transform: scale(1);}
+    100% { transform: scale(1); }
 }
 @media(max-width: 960px){
 	.winning-places img{
@@ -581,7 +594,7 @@ header{
 	background-attachment: fixed;
 }
 .contact-us-background{
-	background: rgba(0,0,0,0.6);
+	background: rgba(0,0,0,0.5);
 	padding: 100px 0;	
 }
 .container-div{
@@ -608,6 +621,7 @@ header{
 	font-family: Open Sans;
 	font-size: 17px;
 	padding-bottom: 20px;
+	text-shadow: 5px 5px 10px #000;
 }
 .contact-us-form form input, .contact-us-form form textarea{
 	background: rgba(255, 255, 255, 0.7);
