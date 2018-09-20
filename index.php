@@ -13,8 +13,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script-->
 	<script src="parallaxjs/parallax.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -41,16 +43,19 @@
 						    		    <a class="nav-link" id="nav-link-1" href="#vr-description">Why virtual rival<span></span><span></span></a>
 						    	    </li>
 						    	    <li class="nav-item">
-						        		<a class="nav-link" id="nav-link-2" href="#vr-timeline">Timeline<span></span><span></span></a>
+						    		    <a class="nav-link" id="nav-link-2" href="#vr-countdown">Countdown Started<span></span><span></span></a>
+						    	    </li>
+						    	    <li class="nav-item">
+						        		<a class="nav-link" id="nav-link-3" href="#vr-timeline">Timeline<span></span><span></span></a>
 						      		</li>
 						      		<li class="nav-item">
-						      			<a class="nav-link" id="nav-link-3" href="#vr-awards">awards<span></span><span></span></a>
+						      			<a class="nav-link" id="nav-link-4" href="#vr-awards">awards<span></span><span></span></a>
 						      		</li>
 						      		<li class="nav-item">
-						        		<a class="nav-link" id="nav-link-4" href="#vr-sponsers">sponsers<span></span><span></span></a>
+						        		<a class="nav-link" id="nav-link-5" href="#vr-sponsers">sponsers<span></span><span></span></a>
 						      		</li>
 						      		<li class="nav-item">
-						        		<a class="nav-link" id="nav-link-5" href="#vr-contact-us">contact us<span></span><span></span></a>
+						        		<a class="nav-link" id="nav-link-6" href="#vr-contact-us">contact us<span></span><span></span></a>
 						      		</li>
 						        	<li class="nav-item">
 						        		<a class="nav-link" id="navbar-reg-link" href="#">Register</a>
@@ -116,7 +121,7 @@
 				</div>
 			</div>
 		</section>
-		<section>
+		<section class="section" id="vr-countdown">
 			<div class="countdown">
 				<div class="countdown-background">
 					<div class="container">
@@ -336,7 +341,7 @@
 						<a href=""><i class="fab fa-facebook fa-3x"></i></a>
 						<a href=""><i class="fab fa-twitter fa-3x"></i></a>
 						<a href=""><i class="fab fa-instagram fa-3x"></i></a>
-						<a href=""><i class="fab fa-google-plus-g fa-3x"></i></a>
+						<a href=""><i class="fab fa-youtube fa-3x"></i></a>
 					</div>
 				</div>
 				<div class="footer-copyright-sec">
