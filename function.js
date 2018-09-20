@@ -11,7 +11,7 @@ $(document).ready(function(){
       	event.preventDefault();
       	if (width >=1024) {
       		$('html, body').animate({
-	        	scrollTop: $('#vr-description').offset().top="640px"
+	        	scrollTop: $('#vr-description').offset().top="620px"
 	      	}, 1000);
       	} else if ((width < 1024) && (width >=600)){
       		$('html, body').animate({
@@ -25,9 +25,25 @@ $(document).ready(function(){
     });
     $("#nav-link-2").on('click', function(event) {
       	event.preventDefault();
+      	if (width >=1024) {
+      		$('html, body').animate({
+	        	scrollTop: $('#vr-countdown').offset().top="1330px"
+	      	}, 1000);
+      	} else if ((width < 1024) && (width >=600)){
+      		$('html, body').animate({
+	        	scrollTop: $('#vr-countdown').offset().top="1450px"
+	      	}, 1000);
+      	} else {
+      		$('html, body').animate({
+	        	scrollTop: $('#vr-countdown').offset().top="2050px"
+	      	}, 1000);
+      	}
+    });
+    $("#nav-link-3").on('click', function(event) {
+      	event.preventDefault();
       	if (width >= 1024) {
 			$('html, body').animate({
-	        	scrollTop: $('#vr-timeline').offset().top="2100px"
+	        	scrollTop: $('#vr-timeline').offset().top="2030px"
 	      	}, 1000);
       	} else if ((width < 1024) && (width >=600)){
       		$('html, body').animate({
@@ -39,7 +55,7 @@ $(document).ready(function(){
 	      	}, 1000);
       	}
     });
-    $("#nav-link-3").on('click', function(event) {
+    $("#nav-link-4").on('click', function(event) {
       	event.preventDefault();
       	if (width >= 1024) {
       		$('html, body').animate({
@@ -55,11 +71,11 @@ $(document).ready(function(){
 	      	}, 1000);
       	}
     });
-    $("#nav-link-4").on('click', function(event) {
+    $("#nav-link-5").on('click', function(event) {
       	event.preventDefault();
       	if (width >= 1024) {
       		$('html, body').animate({
-	        	scrollTop: $('#vr-sponsers').offset().top="3520px"
+	        	scrollTop: $('#vr-sponsers').offset().top="3490px"
 	      	}, 1000);
       	} else if ((width < 1024) && (width >=600)){
       		$('html, body').animate({
@@ -71,11 +87,11 @@ $(document).ready(function(){
 	      	}, 1000);
       	}
     });
-    $("#nav-link-5").on('click', function(event) {
+    $("#nav-link-6").on('click', function(event) {
       	event.preventDefault();
       	if (width >= 1024) {
       		$('html, body').animate({
-	        	scrollTop: $('#vr-contact-us').offset().top="3850px"
+	        	scrollTop: $('#vr-contact-us').offset().top="3810px"
 	      	}, 1000);
       	} else if ((width < 1024) && (width >=600)){
       		$('html, body').animate({
