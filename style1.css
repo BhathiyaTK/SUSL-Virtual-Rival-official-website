@@ -1,0 +1,88 @@
+
+/*//////////////////////////////Registration page styling///////////////////////////////////*/
+@font-face{
+  font-family: Halo;
+  src: url('Fonts/Halo3.ttf');
+}
+.registration-section{
+	position: relative;
+}
+#required-text-div{
+	color: red;
+	margin-bottom: 15px;
+}
+.form-group span{
+	color: red;
+}
+#registration-form-title{
+	color: #fff;
+	background: url(images/header_back-1.jpg);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	text-shadow: 5px 5px 10px #000;
+}
+#registration-form-title-background{
+	background-color: rgba(0,0,0,0.4);
+	padding: 50px 0;
+}
+#registration-form-title h3{
+	font-family: Nunito;
+}
+#registration-form-title h1{
+	font-size: 70px;
+	font-family: Halo;
+}
+@media(max-width: 500px){
+	#registration-form-title h1{
+		font-size: 45px;
+	}
+}
+#registration-form-div{
+	background: rgb(202, 204, 206, 0.8);
+	padding: 20px; 
+	font-family: Nunito;
+}
+.form-section-title{
+	color: #fff;
+	font-size: 24px;
+	font-family: Nunito;
+	padding: 5px 20px;
+	margin-bottom: 20px;
+	background-image: linear-gradient(to right,rgba(12,40,68,0.9),rgba(12,40,68,0));
+	/*border-bottom: 2px solid rgb(12,40,68);*/
+}
+.reg-container-div{
+	position: relative;
+	width: 55%;
+	margin: 30px auto;
+	border-radius: 30px;
+}
+@media(max-width: 600px){
+	.reg-container-div{
+		width: 85%;
+	}
+	#registration-form-div{
+		padding: 30px 10px;
+	}
+}
+#reg-submit-button-div{
+	text-align: center;
+}
+#reg-button{
+	padding: 10px 40px;
+}
+.divider{
+	border-top: 3px solid rgb(12,40,68);
+	margin: 30px 0;
+}
+
+/*/////////////////////////////////////particle.js//////////////////////////////////////////*/
+#particles-js{
+	position: fixed;
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0));
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;	
+}
