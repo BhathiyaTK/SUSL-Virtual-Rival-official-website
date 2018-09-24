@@ -58,7 +58,7 @@
 						        		<a class="nav-link" id="nav-link-6" href="#vr-contact-us">contact us<span></span><span></span></a>
 						      		</li>
 						        	<li class="nav-item">
-						        		<a class="nav-link" id="navbar-reg-link" href="#">Register</a>
+						        		<a class="nav-link" id="navbar-reg-link" href="register.php">Register</a>
 						        	</li>
 						    	</ul>
 						  	</div>
@@ -156,7 +156,7 @@
 							</div>
 						</div>
 						<div id="countdown-sec-reg-button" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-delay="800">
-							<a href="">Register now</a>
+							<a href="register.php">Register now</a>
 						</div>
 					</div>
 				</div>
@@ -284,16 +284,8 @@
 
 							<?php
 
-							// include phpmailer class
-							  require_once 'mailer/class.phpmailer.php';
-							  // creates object
-							  $mail = new PHPMailer(true);
-
-							/*session_start();
-
-							if(!isset($_SESSION["name"])){
-							  header("Location: contact_me.php");
-							}*/
+						    require_once 'mailer/class.phpmailer.php';
+						    $mail = new PHPMailer(true);
 
 							if(isset($_POST["send_button"])){
 
