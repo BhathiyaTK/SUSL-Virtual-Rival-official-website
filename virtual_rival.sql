@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Sep 26, 2018 at 05:47 PM
+-- Generation Time: Sep 26, 2018 at 06:05 PM
 -- Server version: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -21,6 +21,87 @@ SET time_zone = "+00:00";
 --
 -- Database: `virtual_rival`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `leaders`
+--
+
+DROP TABLE IF EXISTS `leaders`;
+CREATE TABLE IF NOT EXISTS `leaders` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` int(15) NOT NULL,
+  `t_shirt` varchar(10) NOT NULL,
+  `meal` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `member1`
+--
+
+DROP TABLE IF EXISTS `member1`;
+CREATE TABLE IF NOT EXISTS `member1` (
+  `id` int(25) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `t_shirt` varchar(10) NOT NULL,
+  `meal` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `member2`
+--
+
+DROP TABLE IF EXISTS `member2`;
+CREATE TABLE IF NOT EXISTS `member2` (
+  `id` int(25) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `t_shirt` varchar(10) NOT NULL,
+  `meal` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `member3`
+--
+
+DROP TABLE IF EXISTS `member3`;
+CREATE TABLE IF NOT EXISTS `member3` (
+  `id` int(25) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `t_shirt` varchar(10) NOT NULL,
+  `meal` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `member4`
+--
+
+DROP TABLE IF EXISTS `member4`;
+CREATE TABLE IF NOT EXISTS `member4` (
+  `id` int(25) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `t_shirt` varchar(10) NOT NULL,
+  `meal` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
