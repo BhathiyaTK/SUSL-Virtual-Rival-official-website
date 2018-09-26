@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" type="text/css" href="style2.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,7 +40,7 @@
 					</div>
 				</div>
 				<div class="reg-container-div" id="registration-form-div">
-					<form>
+					<form action="process.php" method="POST">
 						<!--Team details part-->
 						<div id="required-text-div">
 							* Required Fields
@@ -50,13 +51,13 @@
 					  	<div class="form-group row">
 					    	<label for="team_name" class="col-sm-3 col-form-label">Team Name<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control" id="team_name" placeholder="Team Name">
+						      	<input type="text" class="form-control" id="team_name" placeholder="Team name here">
 						    </div>
 					  	</div>
 					  	<div class="form-group row">
 						    <label for="university_name" class="col-sm-3 col-form-label">University Name<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control" id="university_name" placeholder="University Name">
+						      	<input type="text" class="form-control" id="university_name" placeholder="University name here">
 						    </div>
 					  	</div>
 					  	<br>
@@ -67,19 +68,19 @@
 					  	<div class="form-group row">
 					    	<label for="leader_name" class="col-sm-3 col-form-label">Leader's Name<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control" id="leader_name" placeholder="Leader's Name">
+						      	<input type="text" class="form-control" id="leader_name" placeholder="Your name here">
 						    </div>
 					  	</div>
 					  	<div class="form-group row">
 					    	<label for="leader_email" class="col-sm-3 col-form-label">Leader's email<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="email" class="form-control" id="leader_email" placeholder="Leader's email">
+						      	<input type="email" class="form-control" id="leader_email" placeholder="Your email here">
 						    </div>
 					  	</div>
 					  	<div class="form-group row">
 						    <label for="leader_contact_no" class="col-sm-3 col-form-label">Contact Number<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control bfh-phone" data-format="ddd ddd dddd" id="leader_contact_no" placeholder="Leader's Contact Number">
+						      	<input type="text" class="form-control bfh-phone" data-format="ddd ddd dddd" id="leader_contact_no" placeholder="Your contact number here">
 						    </div>
 					  	</div>
 					  	<fieldset class="form-group">
@@ -138,13 +139,13 @@
 					  	<div class="form-group row">
 					    	<label for="leader_name" class="col-sm-3 col-form-label">Member-01 Name<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control" id="member1_name" placeholder="Member-01 Name">
+						      	<input type="text" class="form-control" id="member1_name" placeholder="Name here">
 						    </div>
 					  	</div>
 					  	<div class="form-group row">
 					    	<label for="leader_email" class="col-sm-3 col-form-label">Member-01 email<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="email" class="form-control" id="member1_email" placeholder="Member-01 email">
+						      	<input type="email" class="form-control" id="member1_email" placeholder="E-mail here">
 						    </div>
 					  	</div>
 					  	<fieldset class="form-group">
@@ -203,13 +204,13 @@
 					  	<div class="form-group row">
 					    	<label for="leader_name" class="col-sm-3 col-form-label">Member-02 Name<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control" id="member2_name" placeholder="Member-02 Name">
+						      	<input type="text" class="form-control" id="member2_name" placeholder="Name here">
 						    </div>
 					  	</div>
 					  	<div class="form-group row">
 					    	<label for="leader_email" class="col-sm-3 col-form-label">Member-02 email<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="email" class="form-control" id="member2_email" placeholder="Member-02 email">
+						      	<input type="email" class="form-control" id="member2_email" placeholder="E-mail here">
 						    </div>
 					  	</div>
 					  	<fieldset class="form-group">
@@ -268,13 +269,13 @@
 					  	<div class="form-group row">
 					    	<label for="leader_name" class="col-sm-3 col-form-label">Member-03 Name<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control" id="member3_name" placeholder="Member-03 Name">
+						      	<input type="text" class="form-control" id="member3_name" placeholder="Name here">
 						    </div>
 					  	</div>
 					  	<div class="form-group row">
 					    	<label for="leader_email" class="col-sm-3 col-form-label">Member-03 email<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="email" class="form-control" id="member3_email" placeholder="Member-03 email">
+						      	<input type="email" class="form-control" id="member3_email" placeholder="E-mail here">
 						    </div>
 					  	</div>
 					  	<fieldset class="form-group">
@@ -333,13 +334,13 @@
 					  	<div class="form-group row">
 					    	<label for="leader_name" class="col-sm-3 col-form-label">Member-04 Name<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control" id="member4_name" placeholder="Member-04 Name">
+						      	<input type="text" class="form-control" id="member4_name" placeholder="Name here">
 						    </div>
 					  	</div>
 					  	<div class="form-group row">
 					    	<label for="leader_email" class="col-sm-3 col-form-label">Member-04 email<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="email" class="form-control" id="member4_email" placeholder="Member-04 email">
+						      	<input type="email" class="form-control" id="member4_email" placeholder="E-mail here">
 						    </div>
 					  	</div>
 					  	<fieldset class="form-group">
