@@ -1,3 +1,59 @@
+
+<?php
+
+session_start();
+
+include 'db.php';
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    if (isset($_POST["submit"])) {
+        $team_name = $_POST["team_name"];
+        $university_name = $_POST["university_name"];
+
+        $leader_name = $_POST["leader_name"];
+        $leader_email = $_POST["leader_email"];
+        $leader_phone = $_POST["leader_phone"];
+        $leader_t_shirt = $_POST["leader_t_shirt"];
+        $leader_food = $_POST["leader_food"];
+
+        $member1_name = $_POST["member1_name"];
+        $member1_email = $_POST["member1_email"];
+        $member1_t_shirt = $_POST["member1_t_shirt"];
+        $member1_food = $POST["member1_food"];
+
+        $member2_name = $_POST["member2_name"];
+        $member2_email = $_POST["member2_email"];
+        $member2_t_shirt = $_POST["member2_t_shirt"];
+        $member2_food = $POST["member2_food"];
+
+        $member3_name = $_POST["member3_name"];
+        $member3_email = $_POST["member3_email"];
+        $member3_t_shirt = $_POST["member3_t_shirt"];
+        $member3_food = $POST["member3_food"];
+
+        $member4_name = $_POST["member4_name"];
+        $member4_email = $_POST["member4_email"];
+        $member4_t_shirt = $_POST["member4_t_shirt"];
+        $member4_food = $POST["member4_food"];
+
+        if (($team_name!="")&&($university_name!="")&&($leader_name!="")&&($leader_email!="")&&($leader_phone!="")&&($leader_t_shirt!="")&&($leader_food!="")&&($member1_name!="")&&($member1_email!="")&&($member1_t_shirt!="")&&($member1_food!="")&&($member2_name!="")&&($member2_email)&&($member2_t_shirt)&&($member2_food)&&($member3_name!="")&&($member3_email)&&($member3_t_shirt)&&($member3_food)&&($member4_name!="")&&($member4_email)&&($member4_t_shirt)&&($member4_food)) {
+                
+            $query_teams = "INSERT INTO teams(team_name,university_name) VALUES('$team_name','$university_name')";
+            $query_leaders = "INSERT INTO leaders(name,email,phone,t_shirt,meal) VALUES('$leader_name','$leader_email','$leader_phone','$leader_t_shirt','$leader_food')";
+            $query_member1 = "INSERT INTO member1(name,email,t_shirt,meal) VALUES('$member1_name','$member1_email','$member1_t_shirt','$member1_food')";
+            $query_member2 = "INSERT INTO member2(name,email,t_shirt,meal) VALUES('$member2_name','$member2_email','$member2_t_shirt','$member2_food')";
+            $query_member3 = "INSERT INTO member3(name,email,t_shirt,meal) VALUES('$member3_name','$member3_email','$member3_t_shirt','$member3_food')";
+            $query_member4 = "INSERT INTO member4(name,email,t_shirt,meal) VALUES('$member4_name','$member4_email','$member4_t_shirt','$member4_food')";
+
+            if (($conn->query($query_teams))&&($conn->query($query_leaders))&&($conn->query($query_member1))&&($conn->query($query_member2))&&($conn->query($query_member3))&&($conn->query($query_member4))) {
+                # code...
+            }
+        }
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,13 +87,13 @@
 
 
 <body>
-
     <section class="process-sec">
-        <div>
-            
-            
+        <div id="process-sec-background">
             <div>
-                <a id="process_button" class="btn waves-effect indigo darken-3" href="index.php">HOME</a>
+                
+            </div>
+            <div>
+                <a id="process_button" class="btn btn-primary" href="index.php">BACK TO HOME</a>
             </div>
         </div>
     </section>
