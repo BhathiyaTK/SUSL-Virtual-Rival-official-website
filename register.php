@@ -51,13 +51,13 @@
 					  	<div class="form-group row">
 					    	<label for="team_name" class="col-sm-3 col-form-label">Team Name<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control" id="team_name" placeholder="Team name here">
+						      	<input type="text" class="form-control" name="team_name" value="<?php $team_name ?>" id="team_name" placeholder="Team name here">
 						    </div>
 					  	</div>
 					  	<div class="form-group row">
 						    <label for="university_name" class="col-sm-3 col-form-label">University Name<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control" id="university_name" placeholder="University name here">
+						      	<input type="text" class="form-control" name="university_name"> value="<?php $university_name ?>" id="university_name" placeholder="University name here">
 						    </div>
 					  	</div>
 					  	<br>
@@ -68,64 +68,46 @@
 					  	<div class="form-group row">
 					    	<label for="leader_name" class="col-sm-3 col-form-label">Leader's Name<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control" id="leader_name" placeholder="Your name here">
+						      	<input type="text" class="form-control" name="leader_name" value="<?php $leader_name ?>" id="leader_name" placeholder="Your name here">
 						    </div>
 					  	</div>
 					  	<div class="form-group row">
 					    	<label for="leader_email" class="col-sm-3 col-form-label">Leader's email<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="email" class="form-control" id="leader_email" placeholder="Your email here">
+						      	<input type="email" class="form-control" name="leader_email" value="<?php $leader_email ?>" id="leader_email" placeholder="Your email here">
 						    </div>
 					  	</div>
 					  	<div class="form-group row">
 						    <label for="leader_contact_no" class="col-sm-3 col-form-label">Contact Number<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control bfh-phone" data-format="ddd ddd dddd" id="leader_contact_no" placeholder="Your contact number here">
+						      	<input type="text" class="form-control bfh-phone" data-format="ddd ddd dddd" id="leader_contact_no" name="leader_phone" value="<?php $leader_phone ?>" placeholder="Your contact number here">
 						    </div>
 					  	</div>
 					  	<fieldset class="form-group">
 						    <div class="row">
-						      	<legend class="col-form-label col-sm-3 pt-0">T-shirt Size<span>*</span></legend>
-						      	<div class="col-sm-9">
-						      		<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XS" value="xs">
-									  	<label class="form-check-label" for="inlineRadio1">XS</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="S" value="s">
-									  	<label class="form-check-label" for="inlineRadio2">S</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="M" value="m">
-									  	<label class="form-check-label" for="inlineRadio3">M</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="L" value="l">
-									  	<label class="form-check-label" for="inlineRadio1">L</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XL" value="xl">
-									  	<label class="form-check-label" for="inlineRadio2">XL</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XXL" value="xxl">
-									  	<label class="form-check-label" for="inlineRadio3">XXL</label>
-									</div>
+						      	<legend class="col-form-label col-sm-3 pt-0">T-shirt Size</legend>
+						      	<div class="col-sm-4">
+						      		<select class="custom-select" name="leader_t_shirt">
+									  	<option selected>Not selected</option>
+									  	<option value="<?php $xs ?>">XS</option>
+									  	<option value="<?php $s ?>">S</option>
+									  	<option value="<?php $m ?>">M</option>
+									  	<option value="<?php $l ?>">L</option>
+									  	<option value="<?php $xl ?>">XL</option>
+									  	<option value="<?php $xxl ?>">XXL</option>
+									</select>
 						      	</div>
 						    </div>
 						  </fieldset>
 					  	<fieldset class="form-group">
 						    <div class="row">
-						      	<legend class="col-form-label col-sm-3 pt-0">Preffered Meal<span>*</span></legend>
-						      	<div class="col-sm-9">
-						      		<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="vegi" value="vegi">
-									  	<label class="form-check-label" for="inlineRadio1">Vegi</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="non-vegi" value="non_vegi">
-									  	<label class="form-check-label" for="inlineRadio2">Non Vegi</label>
-									</div>
+						      	<legend class="col-form-label col-sm-3 pt-0">Preffered Meal</legend>
+						      	<div class="col-sm-4">
+						      		<select class="custom-select" name="leader_food">
+									  	<option selected>Not selected</option>
+									  	<option value="<?php $vegi ?>">Vegi</option>
+									  	<option value="<?php $non_vegi ?>">Non-Vegi</option>
+									</select>
 						      	</div>
 						    </div>
 						</fieldset>
@@ -139,58 +121,40 @@
 					  	<div class="form-group row">
 					    	<label for="leader_name" class="col-sm-3 col-form-label">Member-01 Name<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control" id="member1_name" placeholder="Name here">
+						      	<input type="text" class="form-control" name="member1_name" value="<?php $member1_name ?>" id="member1_name" placeholder="Name here">
 						    </div>
 					  	</div>
 					  	<div class="form-group row">
 					    	<label for="leader_email" class="col-sm-3 col-form-label">Member-01 email<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="email" class="form-control" id="member1_email" placeholder="E-mail here">
+						      	<input type="email" class="form-control" name="member1_email" value="<?php $member1_email ?>" id="member1_email" placeholder="E-mail here">
 						    </div>
 					  	</div>
 					  	<fieldset class="form-group">
 						    <div class="row">
-						      	<legend class="col-form-label col-sm-3 pt-0">T-shirt Size<span>*</span></legend>
-						      	<div class="col-sm-9">
-						      		<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XS" value="member1_xs">
-									  	<label class="form-check-label" for="inlineRadio1">XS</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="S" value="member1_s">
-									  	<label class="form-check-label" for="inlineRadio2">S</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="M" value="member1_m">
-									  	<label class="form-check-label" for="inlineRadio3">M</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="L" value="member1_l">
-									  	<label class="form-check-label" for="inlineRadio1">L</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XL" value="member1_xl">
-									  	<label class="form-check-label" for="inlineRadio2">XL</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XXL" value="member1_xxl">
-									  	<label class="form-check-label" for="inlineRadio3">XXL</label>
-									</div>
+						      	<legend class="col-form-label col-sm-3 pt-0">T-shirt Size</legend>
+						      	<div class="col-sm-4">
+						      		<select class="custom-select" name="member1_t_shirt">
+									  	<option selected>Not selected</option>
+									  	<option value="<?php $xs ?>">XS</option>
+									  	<option value="<?php $s ?>">S</option>
+									  	<option value="<?php $m ?>">M</option>
+									  	<option value="<?php $l ?>">L</option>
+									  	<option value="<?php $xl ?>">XL</option>
+									  	<option value="<?php $xxl ?>">XXL</option>
+									</select>
 						      	</div>
 						    </div>
 						  </fieldset>
 					  	<fieldset class="form-group">
 						    <div class="row">
-						      	<legend class="col-form-label col-sm-3 pt-0">Preffered Meal<span>*</span></legend>
-						      	<div class="col-sm-9">
-						      		<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="vegi" value="member1_vegi">
-									  	<label class="form-check-label" for="inlineRadio1">Vegi</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="non-vegi" value="member1_non_vegi">
-									  	<label class="form-check-label" for="inlineRadio2">Non Vegi</label>
-									</div>
+						      	<legend class="col-form-label col-sm-3 pt-0">Preffered Meal</legend>
+						      	<div class="col-sm-4">
+						      		<select class="custom-select" name="member1_food">
+									  	<option selected>Not selected</option>
+									  	<option value="<?php $vegi ?>">Vegi</option>
+									  	<option value="<?php $non_vegi ?>">Non-Vegi</option>
+									</select>
 						      	</div>
 						    </div>
 						</fieldset>
@@ -204,58 +168,40 @@
 					  	<div class="form-group row">
 					    	<label for="leader_name" class="col-sm-3 col-form-label">Member-02 Name<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control" id="member2_name" placeholder="Name here">
+						      	<input type="text" class="form-control" name="member2_name" value="<?php $member2_name ?>" id="member2_name" placeholder="Name here">
 						    </div>
 					  	</div>
 					  	<div class="form-group row">
 					    	<label for="leader_email" class="col-sm-3 col-form-label">Member-02 email<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="email" class="form-control" id="member2_email" placeholder="E-mail here">
+						      	<input type="email" class="form-control" name="member2_email" value="<?php $member2_email ?>" id="member2_email" placeholder="E-mail here">
 						    </div>
 					  	</div>
 					  	<fieldset class="form-group">
 						    <div class="row">
-						      	<legend class="col-form-label col-sm-3 pt-0">T-shirt Size<span>*</span></legend>
-						      	<div class="col-sm-9">
-						      		<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XS" value="member2_xs">
-									  	<label class="form-check-label" for="inlineRadio1">XS</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="S" value="member2_s">
-									  	<label class="form-check-label" for="inlineRadio2">S</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="M" value="member2_m">
-									  	<label class="form-check-label" for="inlineRadio3">M</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="L" value="member2_l">
-									  	<label class="form-check-label" for="inlineRadio1">L</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XL" value="member2_xl">
-									  	<label class="form-check-label" for="inlineRadio2">XL</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XXL" value="member2_xxl">
-									  	<label class="form-check-label" for="inlineRadio3">XXL</label>
-									</div>
+						      	<legend class="col-form-label col-sm-3 pt-0">T-shirt Size</legend>
+						      	<div class="col-sm-4">
+						      		<select class="custom-select" name="member2_t_shirt">
+									  	<option selected>Not selected</option>
+									  	<option value="<?php $xs ?>">XS</option>
+									  	<option value="<?php $s ?>">S</option>
+									  	<option value="<?php $m ?>">M</option>
+									  	<option value="<?php $l ?>">L</option>
+									  	<option value="<?php $xl ?>">XL</option>
+									  	<option value="<?php $xxl ?>">XXL</option>
+									</select>
 						      	</div>
 						    </div>
 						  </fieldset>
 					  	<fieldset class="form-group">
 						    <div class="row">
-						      	<legend class="col-form-label col-sm-3 pt-0">Preffered Meal<span>*</span></legend>
-						      	<div class="col-sm-9">
-						      		<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="vegi" value="member2_vegi">
-									  	<label class="form-check-label" for="inlineRadio1">Vegi</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="non-vegi" value="member2_non_vegi">
-									  	<label class="form-check-label" for="inlineRadio2">Non Vegi</label>
-									</div>
+						      	<legend class="col-form-label col-sm-3 pt-0">Preffered Meal</legend>
+						      	<div class="col-sm-4">
+						      		<select class="custom-select" name="member2_food">
+									  	<option selected>Not selected</option>
+									  	<option value="<?php $vegi ?>">Vegi</option>
+									  	<option value="<?php $non_vegi ?>">Non-Vegi</option>
+									</select>
 						      	</div>
 						    </div>
 						</fieldset>
@@ -269,58 +215,40 @@
 					  	<div class="form-group row">
 					    	<label for="leader_name" class="col-sm-3 col-form-label">Member-03 Name<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control" id="member3_name" placeholder="Name here">
+						      	<input type="text" class="form-control" name="member3_name" value="<?php $member3_name ?>" id="member3_name" placeholder="Name here">
 						    </div>
 					  	</div>
 					  	<div class="form-group row">
 					    	<label for="leader_email" class="col-sm-3 col-form-label">Member-03 email<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="email" class="form-control" id="member3_email" placeholder="E-mail here">
+						      	<input type="email" class="form-control" name="member3_email" value="<?php $member3_email ?>" id="member3_email" placeholder="E-mail here">
 						    </div>
 					  	</div>
 					  	<fieldset class="form-group">
 						    <div class="row">
-						      	<legend class="col-form-label col-sm-3 pt-0">T-shirt Size<span>*</span></legend>
-						      	<div class="col-sm-9">
-						      		<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XS" value="member3_xs">
-									  	<label class="form-check-label" for="inlineRadio1">XS</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="S" value="member3_s">
-									  	<label class="form-check-label" for="inlineRadio2">S</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="M" value="member3_m">
-									  	<label class="form-check-label" for="inlineRadio3">M</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="L" value="member3_l">
-									  	<label class="form-check-label" for="inlineRadio1">L</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XL" value="member3_xl">
-									  	<label class="form-check-label" for="inlineRadio2">XL</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XXL" value="member3_xxl">
-									  	<label class="form-check-label" for="inlineRadio3">XXL</label>
-									</div>
+						      	<legend class="col-form-label col-sm-3 pt-0">T-shirt Size</legend>
+						      	<div class="col-sm-4">
+						      		<select class="custom-select" name="member3_t_shirt">
+									  	<option selected>Not selected</option>
+									  	<option value="<?php $xs ?>">XS</option>
+									  	<option value="<?php $s ?>">S</option>
+									  	<option value="<?php $m ?>">M</option>
+									  	<option value="<?php $l ?>">L</option>
+									  	<option value="<?php $xl ?>">XL</option>
+									  	<option value="<?php $xxl ?>">XXL</option>
+									</select>
 						      	</div>
 						    </div>
 						  </fieldset>
 					  	<fieldset class="form-group">
 						    <div class="row">
-						      	<legend class="col-form-label col-sm-3 pt-0">Preffered Meal<span>*</span></legend>
-						      	<div class="col-sm-9">
-						      		<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="vegi" value="member3_vegi">
-									  	<label class="form-check-label" for="inlineRadio1">Vegi</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="non-vegi" value="member3_non_vegi">
-									  	<label class="form-check-label" for="inlineRadio2">Non Vegi</label>
-									</div>
+						      	<legend class="col-form-label col-sm-3 pt-0">Preffered Meal</legend>
+						      	<div class="col-sm-4">
+						      		<select class="custom-select" name="member3_food">
+									  	<option selected>Not selected</option>
+									  	<option value="<?php $vegi ?>">Vegi</option>
+									  	<option value="<?php $non_vegi ?>">Non-Vegi</option>
+									</select>
 						      	</div>
 						    </div>
 						</fieldset>
@@ -334,65 +262,47 @@
 					  	<div class="form-group row">
 					    	<label for="leader_name" class="col-sm-3 col-form-label">Member-04 Name<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="text" class="form-control" id="member4_name" placeholder="Name here">
+						      	<input type="text" class="form-control" name="member4_name" value="<?php $member4_name ?>" id="member4_name" placeholder="Name here">
 						    </div>
 					  	</div>
 					  	<div class="form-group row">
 					    	<label for="leader_email" class="col-sm-3 col-form-label">Member-04 email<span>*</span></label>
 						    <div class="col-sm-9">
-						      	<input type="email" class="form-control" id="member4_email" placeholder="E-mail here">
+						      	<input type="email" class="form-control" name="member4_email" value="<?php $member4_email ?>" id="member4_email" placeholder="E-mail here">
 						    </div>
 					  	</div>
 					  	<fieldset class="form-group">
 						    <div class="row">
-						      	<legend class="col-form-label col-sm-3 pt-0">T-shirt Size<span>*</span></legend>
-						      	<div class="col-sm-9">
-						      		<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XS" value="member4_xs">
-									  	<label class="form-check-label" for="inlineRadio1">XS</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="S" value="member4_s">
-									  	<label class="form-check-label" for="inlineRadio2">S</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="M" value="member4_m">
-									  	<label class="form-check-label" for="inlineRadio3">M</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="L" value="member4_l">
-									  	<label class="form-check-label" for="inlineRadio1">L</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XL" value="member4_xl">
-									  	<label class="form-check-label" for="inlineRadio2">XL</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="XXL" value="member4_xxl">
-									  	<label class="form-check-label" for="inlineRadio3">XXL</label>
-									</div>
+						      	<legend class="col-form-label col-sm-3 pt-0">T-shirt Size</legend>
+						      	<div class="col-sm-4">
+						      		<select class="custom-select" name="member4_t_shirt">
+									  	<option selected>Not selected</option>
+									  	<option value="<?php $xs ?>">XS</option>
+									  	<option value="<?php $s ?>">S</option>
+									  	<option value="<?php $m ?>">M</option>
+									  	<option value="<?php $l ?>">L</option>
+									  	<option value="<?php $xl ?>">XL</option>
+									  	<option value="<?php $xxl ?>">XXL</option>
+									</select>
 						      	</div>
 						    </div>
 						  </fieldset>
 					  	<fieldset class="form-group">
 						    <div class="row">
-						      	<legend class="col-form-label col-sm-3 pt-0">Preffered Meal<span>*</span></legend>
-						      	<div class="col-sm-9">
-						      		<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="vegi" value="member4_vegi">
-									  	<label class="form-check-label" for="inlineRadio1">Vegi</label>
-									</div>
-									<div class="form-check">
-									  	<input class="form-check-input" type="radio" name="gridRadios" id="non-vegi" value="member4_non_vegi">
-									  	<label class="form-check-label" for="inlineRadio2">Non Vegi</label>
-									</div>
+						      	<legend class="col-form-label col-sm-3 pt-0">Preffered Meal</legend>
+						      	<div class="col-sm-4">
+						      		<select class="custom-select" name="member4_food">
+									  	<option selected>Not selected</option>
+									  	<option value="<?php $vegi ?>">Vegi</option>
+									  	<option value="<?php $non_vegi ?>">Non-Vegi</option>
+									</select>
 						      	</div>
 						    </div>
 						</fieldset>
 						<div class="divider"></div>
 						<div class="form-group row" id="reg-submit-button-div">
 						    <div class="col-sm-12">
-						        <button id="reg-button" type="submit" class="btn btn-primary">SUBMIT</button>
+						        <button name="submit" id="reg-button" type="submit" class="btn btn-primary">SUBMIT</button>
 						    </div>
 						</div>
 					</form>
