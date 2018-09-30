@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Sep 26, 2018 at 06:05 PM
+-- Generation Time: Sep 30, 2018 at 05:23 PM
 -- Server version: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -25,97 +25,45 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `leaders`
+-- Table structure for table `team_info`
 --
 
-DROP TABLE IF EXISTS `leaders`;
-CREATE TABLE IF NOT EXISTS `leaders` (
+DROP TABLE IF EXISTS `team_info`;
+CREATE TABLE IF NOT EXISTS `team_info` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `phone` int(15) NOT NULL,
-  `t_shirt` varchar(10) NOT NULL,
-  `meal` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `member1`
---
-
-DROP TABLE IF EXISTS `member1`;
-CREATE TABLE IF NOT EXISTS `member1` (
-  `id` int(25) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `t_shirt` varchar(10) NOT NULL,
-  `meal` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `member2`
---
-
-DROP TABLE IF EXISTS `member2`;
-CREATE TABLE IF NOT EXISTS `member2` (
-  `id` int(25) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `t_shirt` varchar(10) NOT NULL,
-  `meal` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `member3`
---
-
-DROP TABLE IF EXISTS `member3`;
-CREATE TABLE IF NOT EXISTS `member3` (
-  `id` int(25) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `t_shirt` varchar(10) NOT NULL,
-  `meal` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `member4`
---
-
-DROP TABLE IF EXISTS `member4`;
-CREATE TABLE IF NOT EXISTS `member4` (
-  `id` int(25) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `t_shirt` varchar(10) NOT NULL,
-  `meal` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `teams`
---
-
-DROP TABLE IF EXISTS `teams`;
-CREATE TABLE IF NOT EXISTS `teams` (
-  `id` int(25) NOT NULL AUTO_INCREMENT,
   `team_name` varchar(100) NOT NULL,
   `university_name` varchar(150) NOT NULL,
+  `leader_name` varchar(100) NOT NULL,
+  `leader_email` varchar(150) NOT NULL,
+  `leader_phone` int(30) NOT NULL,
+  `leader_t_shirt` varchar(10) NOT NULL,
+  `leader_meal` varchar(20) NOT NULL,
+  `member1_name` varchar(100) NOT NULL,
+  `member1_email` varchar(150) NOT NULL,
+  `member1_t_shirt` varchar(10) NOT NULL,
+  `member1_meal` varchar(20) NOT NULL,
+  `member2_name` varchar(100) NOT NULL,
+  `member2_email` varchar(150) NOT NULL,
+  `member2_t_shirt` varchar(10) NOT NULL,
+  `member2_meal` varchar(20) NOT NULL,
+  `member3_name` varchar(100) NOT NULL,
+  `member3_email` varchar(150) NOT NULL,
+  `member3_t_shirt` varchar(10) NOT NULL,
+  `member3_meal` varchar(20) NOT NULL,
+  `member4_name` varchar(100) NOT NULL,
+  `member4_email` varchar(150) NOT NULL,
+  `member4_t_shirt` varchar(10) NOT NULL,
+  `member4_meal` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=64 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `team_info`
+--
+
+INSERT INTO `team_info` (`id`, `team_name`, `university_name`, `leader_name`, `leader_email`, `leader_phone`, `leader_t_shirt`, `leader_meal`, `member1_name`, `member1_email`, `member1_t_shirt`, `member1_meal`, `member2_name`, `member2_email`, `member2_t_shirt`, `member2_meal`, `member3_name`, `member3_email`, `member3_t_shirt`, `member3_meal`, `member4_name`, `member4_email`, `member4_t_shirt`, `member4_meal`) VALUES
+(61, 'Gangster', 'susl', 'Bhathiya', 'btk@gmail.com', 770000001, 'M', 'Non-Vegi', 'Yohan', 'huda@gmail.com', 'M', 'Non-Vegi', 'Osusara', 'kana@gmail.com', 'S', 'Vegi', 'Sithum', 'thawa@gmail.com', 'XL', 'Non-Vegi', 'Janidu', 'huiya@gmail.com', 'M', 'Non-Vegi'),
+(63, 'Dark Storm', 'SUSL', 'BTK', 'bhathi@gmail.com', 772651098, 'M', 'Non-Vegi', 'Kushan', 'kushan@gmail.com', 'L', 'Non-Vegi', 'Sathish', 'sathish@gmail.com', 'M', 'Non-Vegi', 'Tharaka', 'tharaka@gmail.com', 'M', 'Non-Vegi', 'Pasindu', 'pasindu@gmail.com', 'L', 'Non-Vegi');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
